@@ -65,7 +65,7 @@ class WaveTeamy : ParsedHttpSource(), ConfigurableSource {
         }
     }
 
-    override fun popularMangaNextPageSelector() = ""
+    override fun popularMangaNextPageSelector() = "body"
 
     // Latest
 
@@ -111,7 +111,7 @@ class WaveTeamy : ParsedHttpSource(), ConfigurableSource {
     // Search
 
     override fun searchMangaRequest(page: Int, query: String, filters: FilterList): Request {
-        return GET("$baseUrl/ajax/search?keyword=$query", headers)
+        return GET("$baseUrl/wapi/hanout/v1/series/search-work-site", headers)
     }
 
     override fun searchMangaSelector() = "li.list-group-item"

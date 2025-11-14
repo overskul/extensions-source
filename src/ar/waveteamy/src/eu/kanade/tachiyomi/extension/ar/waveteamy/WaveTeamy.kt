@@ -1,4 +1,4 @@
-package eu.kanade.tachiyomi.extension.ar.teamx
+package eu.kanade.tachiyomi.extension.ar.waveteamy
 
 import android.content.SharedPreferences
 import android.widget.Toast
@@ -23,7 +23,7 @@ import java.text.SimpleDateFormat
 import java.util.Locale
 import java.util.concurrent.TimeUnit
 
-class TeamX : ParsedHttpSource(), ConfigurableSource {
+class WaveTeamy : ParsedHttpSource(), ConfigurableSource {
 
     override val name = "Wave Teamy"
 

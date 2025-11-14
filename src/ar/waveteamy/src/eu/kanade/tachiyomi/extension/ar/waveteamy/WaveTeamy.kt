@@ -49,7 +49,7 @@ class WaveTeamy : ParsedHttpSource(), ConfigurableSource {
         return GET("$baseUrl/series/" /*+ if (page > 1) "?page=$page" else ""*/, headers)
     }
 
-    override fun popularMangaSelector() = "body > div:nth-child(11) > div"
+    override fun popularMangaSelector() = "div:nth-child(11) > div > div:nth-child(1) > a"
 
     override fun popularMangaFromElement(element: Element): SManga {
         return SManga.create().apply {

@@ -1,0 +1,8 @@
+ext {
+    extName = 'Wave Teamy'
+    extClass = '.WaveTeamy'
+    extVersionCode = 01
+    isNsfw = false
+}
+
+apply from: "$rootDir/common.gradle"
